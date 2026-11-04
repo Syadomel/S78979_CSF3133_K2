@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Buuk | Contact Us</title>
+</head>
+<body>
 
+    <!-- Header -->
+    <div id="header">
+        <h1>Wonder Buuk</h1>
+        <span>Your ideas, our inspiration.</span>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contact-form">
+        <h2>Contact Us</h2>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </p>
+
+            <p>
+                <label for="contact-date">Preferred contact date:</label>
+                <input type="date" id="contact-date"
+                       name="contact-date" required>
+            </p>
+
+            <p>
+                <label for="satisfaction">Satisfaction level:</label>
+                <input type="range" id="satisfaction"
+                       name="satisfaction"
+                       min="0" max="10" step="1" value="5"
+                       oninput="satisfaction-value.value = this.value">
+
+                <output id="satisfaction-value"
+                        for="satisfaction">5</output>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+
+        </form>
+    </div>
+
+    <!-- Calculator -->
+    <div id="calculator">
+        <h2>Quick Calculator</h2>
+
+        <form oninput="total.value = Number(first.value) + Number(second.value)">
+
+            <label for="first">First number:</label>
+            <input type="number" id="first" name="first" value="0">
+
+            <label for="second">Second number:</label>
+            <input type="number" id="second" name="second" value="0">
+
+            <p>
+                Sum:
+                <output name="total" for="first second">0</output>
+            </p>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>Contact us: hello@wonderbuuk.com</p>
+        <p>&copy; 2026 Wonder Buuk. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
