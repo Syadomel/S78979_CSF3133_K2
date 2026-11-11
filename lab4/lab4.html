@@ -1,1 +1,125 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-align: center;
+            color: #8b4513;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Learning HTML5 and CSS</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my website. This page is created using HTML5 and CSS.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+
+        <article>
+            <h3>About This Website</h3>
+            <p>
+                This website demonstrates the use of HTML5 elements,
+                CSS styling, navigation links and HTML forms.
+            </p>
+        </article>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>My Video</h2>
+
+        <figure>
+            <video controls width="500">
+                <source src="upinipin.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Figure 1: My Favourite Video
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Form</h2>
+
+        <form action="#" method="post">
+
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Gender -->
+            <p>Gender:</p>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <!-- Favourite Hobbies -->
+            <p>Favourite Hobbies:</p>
+
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="sports">Sports</label>
+
+            <!-- Submit Button -->
+            <br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
