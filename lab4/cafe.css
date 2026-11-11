@@ -1,0 +1,41 @@
+
+/* External CSS - Navigation Bar */
+
+/* Remove bullets and default spacing */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Display navigation items horizontally */
+nav li {
+    display: inline-block;
+}
+
+/* Navigation links styling */
+nav a {
+    display: block;
+    background-color: #1A5276;
+    color: white;
+    padding: 15px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Change background colour when mouse hovers */
+nav a:hover {
+    background-color: #E67E22;
+    color: white;
+}
+
+/* Responsive Navigation Bar */
+@media screen and (max-width: 600px) {
+
+    nav li {
+        display: block;
+    }
+
+}
