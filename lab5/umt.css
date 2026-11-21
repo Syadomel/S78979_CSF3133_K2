@@ -1,0 +1,173 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8; /* Soft coastal light blue-gray background */
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #2b1055, #4a154b, #005f73); /* UMT Purple & Marine Teal */
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+header .subtitle {
+    font-size: 1.05rem;
+    color: #e0f2fe;
+    font-style: italic;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #1e1b4b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 1.75rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1.25rem;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2.25rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+article h2 {
+    font-family: 'Merriweather', serif;
+    color: #2b1055;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+article p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    color: #334155;
+}
+
+/* Table Styling */
+.table-container {
+    margin-top: 2rem;
+    overflow-x: auto; /* Ensures responsiveness on mobile screens */
+}
+
+.table-container h3 {
+    font-family: 'Merriweather', serif;
+    color: #005f73;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 0.85rem 1rem;
+    text-align: left;
+}
+
+thead th {
+    background-color: #2b1055;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+    background-color: #e0f2fe;
+    transition: background-color 0.2s ease;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #e2e8f0;
+    color: #334155;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid #cbd5e1;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    article p {
+        text-align: left;
+    }
+}
