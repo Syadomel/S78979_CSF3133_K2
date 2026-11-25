@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Header introducing the quiz -->
+        <header>
+            <h1>Web Development Quiz</h1>
+            <p>Test your knowledge of HTML, CSS, and JavaScript! You have 15 seconds per question.</p>
+        </header>
 
+        <main>
+            <!-- Section to display questions, answer options, and timer -->
+            <section id="quiz-section">
+                <div class="quiz-header-bar">
+                    <span id="question-progress">Question 1 of 5</span>
+                    <div id="timer-box">Time Left: <span id="timer">15</span>s</div>
+                </div>
+
+                <h2 id="question-text">Question goes here...</h2>
+
+                <div id="options-container" class="options-grid">
+                    <!-- Option buttons will be dynamically inserted by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Section to show feedback (correct/incorrect) after each answer -->
+            <section id="feedback-section" class="hidden">
+                <p id="feedback-text"></p>
+            </section>
+
+            <!-- Navigation and submission controls -->
+            <section id="controls-section">
+                <button id="submit-btn" class="btn primary-btn" disabled>Submit Answer</button>
+                <button id="next-btn" class="btn secondary-btn hidden">Next Question</button>
+                <button id="restart-btn" class="btn primary-btn hidden">Restart Quiz</button>
+            </section>
+        </main>
+
+        <!-- Footer to display the user's score after finishing the quiz -->
+        <footer>
+            <p id="score-display">Current Score: 0 / 5</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
